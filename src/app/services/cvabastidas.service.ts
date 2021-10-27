@@ -21,7 +21,7 @@ export class CvabastidasService {
   }
 
   private CargarProfesional(){
-    this.http.get('https://cv-tutorial-70504.firebaseio.com/Profesional.json')
+    this.http.get('https://portfolio-28325-default-rtdb.firebaseio.com/Profesional.json')
       .subscribe((resp: any[]) => {
         this.profesional = resp;
         console.log(resp);
@@ -29,7 +29,7 @@ export class CvabastidasService {
   }
 
   private CargarEducacion(){
-    this.http.get('https://cv-tutorial-70504.firebaseio.com/Educacion.json')
+    this.http.get('https://portfolio-28325-default-rtdb.firebaseio.com/Educacion.json')
       .subscribe((resp: any[]) => {
         this.educacion = resp;
         console.log(resp);
@@ -45,7 +45,7 @@ export class CvabastidasService {
   }
 
   private CargarExperiencia(){
-    this.http.get('https://cv-tutorial-70504.firebaseio.com/Experiencia.json')
+    this.http.get('https://portfolio-28325-default-rtdb.firebaseio.com/Experiencia.json')
       .subscribe((resp: any[]) => {
         this.experiencia = resp;
         console.log(resp);
